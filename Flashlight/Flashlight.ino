@@ -8,7 +8,7 @@ const int X_pin = A3;
 const int Y_pin = A4;
 
 void setup() {
-  Serial.begin(115200);   // <-- match Unity baud rate
+  Serial.begin(115200);   
   pinMode(led, OUTPUT);
   pinMode(greenLed, OUTPUT);
   pinMode(redLed, OUTPUT);
@@ -25,17 +25,16 @@ void loop() {
   digitalWrite(led, switchState == 0 ? HIGH : LOW);
   digitalWrite(greenLed, switchState == 0 ? HIGH : LOW);
 
-  // Pulse red LED briefly
+  // Pulse red LED 
   digitalWrite(redLed, HIGH);
   delay(5);
   digitalWrite(redLed, LOW);
 
-  // OUTPUT FORMAT (space-separated, matches DataInOut01 parser)
   Serial.print(xVal);
   Serial.print(" ");
   Serial.print(yVal);
   Serial.print(" ");
-  Serial.println(switchState); // newline-terminated
+  Serial.println(switchState); 
 
   delay(25);
 }
