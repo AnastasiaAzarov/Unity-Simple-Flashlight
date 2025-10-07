@@ -13,14 +13,14 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638951404220000000
-    m_Hash: 4267493876
+      ticks: 638954528270000000
+    m_Hash: 1524557885
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: /Users/anastasia/Documents/Unity Projects/Flashlight1.1/Packages
-m_EditorVersion: 2023.2.7f1 (0a9195b3d453)
+m_EditorVersion: 2023.2.22f1 (6b19bf4f8115)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@2.9.3
   testable: 0
@@ -126,7 +126,6 @@ m_ResolvedPackages:
     - 2.9.2
     - 2.9.3
     compatible:
-    - 2.2.0
     - 2.3.1
     - 2.4.3
     - 2.4.4
@@ -139,7 +138,7 @@ m_ResolvedPackages:
     - 2.9.1
     - 2.9.2
     - 2.9.3
-    recommended: 2.2.0
+    recommended: 2.3.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -180,7 +179,7 @@ m_ResolvedPackages:
     revision: d05e170be4282c71223767f286e93871356512a1
     path: 
   unityLifecycle:
-    version: 2.2.0
+    version: 2.3.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -247,7 +246,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.27
+    version: 3.0.28
   - name: com.unity.editorcoroutines
     version: 1.0.0
   - name: com.unity.performance.profile-analyzer
@@ -3235,10 +3234,12 @@ m_ResolvedPackages:
     - 2.0.21
     - 2.0.22
     - 2.0.23
+    - 2.0.25
     compatible:
     - 2.0.22
     - 2.0.23
-    recommended: 2.0.23
+    - 2.0.25
+    recommended: 2.0.25
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -3292,12 +3293,12 @@ m_ResolvedPackages:
     Prevent circular dependency errors with SDK-Style projects."}'
   assetStore:
     productId: 
-- packageId: com.unity.ide.rider@3.0.27
+- packageId: com.unity.ide.rider@3.0.28
   testable: 0
   isDirectDependency: 0
-  version: 3.0.27
+  version: 3.0.28
   source: 1
-  resolvedPath: /Users/anastasia/Documents/Unity Projects/Flashlight1.1/Library/PackageCache/com.unity.ide.rider@3.0.27
+  resolvedPath: /Users/anastasia/Documents/Unity Projects/Flashlight1.1/Library/PackageCache/com.unity.ide.rider@3.0.28
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -3362,7 +3363,6 @@ m_ResolvedPackages:
     - 3.0.37
     - 3.0.38
     compatible:
-    - 3.0.27
     - 3.0.28
     - 3.0.31
     - 3.0.34
@@ -3392,16 +3392,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638373878680000000
+  datePublishedTicks: 638447139880000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: 1d471c19a7f21834ae5b8d0358fd6f9b242c1ee8
+    revision: f4880c72477e9bbd7321c0dbda4428fa10d916df
     path: 
   unityLifecycle:
-    version: 3.0.27
+    version: 3.0.28
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -3411,10 +3411,9 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"- Restore the ability to select Rider installation
-    from the custom location\n- Fix possible extra project regeneration on moving
-    focus from Rider to Unity\n- Improve performance of code generation for very
-    large projects"}'
+  upmReserved: '{"changelog":"- fix RIDER-103933 \"PlayerSettings.suppressCommonWarnings\"
+    is not supported in Unity 2019.4.40f\n- fix https://github.com/JetBrains/resharper-unity/issues/2431
+    and [RIDER-104221](https://youtrack.jetbrains.com/issue/RIDER-104221)"}'
   assetStore:
     productId: 
 - packageId: com.unity.editorcoroutines@1.0.0
